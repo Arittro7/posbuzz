@@ -1,0 +1,24 @@
+# For Node.js backend
+node_modules/
+.env
+.env.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# For frontend (React/Vue/Angular)
+dist/
+build/
+.cache/
+.vite/
+coverage/
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
