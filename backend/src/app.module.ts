@@ -7,6 +7,9 @@ import * as redisStore from 'cache-manager-redis-yet';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { PrismaService } from './prisma/prisma.service';
+import { AuthModule } from './auth/auth.module';
+import { ProductsModule } from './products/products.module';
+import { SalesModule } from './sales/sales.module';
 
 @Module({
   imports: [
@@ -20,6 +23,12 @@ import { PrismaService } from './prisma/prisma.service';
         ttl: 60 * 1000,
       }),
     }),
+
+    AuthModule,
+
+    ProductsModule,
+
+    SalesModule,
   ],
   controllers: [AppController],
   providers: [
