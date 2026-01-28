@@ -6,6 +6,14 @@ Live Demo:
 - **Frontend**: https://posbuzz-eight.vercel.app/  
 - **Backend API**: https://posbuzz-w5rb.onrender.com/api
 
+
+### Login Credential
+
+```
+Email: test@gmail.com
+Password: 123456
+```
+
 ## Overview
 
 This project was developed as part of an internship technical assignment.  
