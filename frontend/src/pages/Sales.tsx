@@ -16,7 +16,6 @@ import {
 import { PlusOutlined, DeleteOutlined } from '@ant-design/icons';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import axios from 'axios';
-import { useAuth } from '../contexts/AuthContext';
 
 interface Product {
   id: string;
@@ -32,7 +31,6 @@ interface SaleItem {
 }
 
 const Sales = () => {
-  const { token } = useAuth();
   const queryClient = useQueryClient();
   const [form] = Form.useForm();
   const [items, setItems] = useState<SaleItem[]>([{ productId: '', quantity: 1 }]);
